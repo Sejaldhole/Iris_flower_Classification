@@ -1,0 +1,35 @@
+# Iris Flower Classification
+
+## Project Overview
+This project implements a machine learning model to classify Iris flowers into three species: **Setosa, Versicolor, and Virginica** based on their sepal and petal measurements. The model is built using Python and scikit-learn.
+
+## Dataset
+- The dataset used is the classic **Iris dataset** from scikit-learn.
+- Features:
+  - Sepal Length
+  - Sepal Width
+  - Petal Length
+  - Petal Width
+- Target: Flower species (Setosa, Versicolor, Virginica)
+
+## Features
+- Data preprocessing and exploration
+- Train-test split
+- Model training using **Decision Tree / Random Forest / Logistic Regression**
+- Model evaluation with accuracy score and confusion matrix
+- Model saving and loading using `joblib`
+
+## Usage
+
+1. Clone this repository or upload files to your Kaggle Notebook.
+2. Run the notebook or script to train and evaluate the model.
+3. Use the saved model to make predictions on new samples.
+
+```python
+# Example usage after loading the model
+import joblib
+
+model = joblib.load("iris_model.pkl")
+sample = [[5.1, 3.5, 1.4, 0.2]]
+prediction = model.predict(sample)
+print("Predicted class:", prediction)
