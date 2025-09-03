@@ -1,0 +1,10 @@
+
+Python 3.x
+
+scikit-learn
+
+pandas
+
+numpy
+
+matplotlib / seaborn (optional, for visualization)
